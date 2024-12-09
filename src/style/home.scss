@@ -1,0 +1,124 @@
+.home {
+  padding: 34px 0 57px;
+  background: rgba(43,62,102,1) url("../assets/home-bg.png") center/cover no-repeat;
+}
+
+.home__burger {
+  width: 50px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &-line {
+    width: 36px;
+    height: 4px;
+    border-radius: 5px;
+    background: rgb(255,255,255);
+    position: relative;
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      border-radius: 5px;
+      background: rgb(255,255,255);
+      left: -14;
+    }
+    &::before {
+      top: -15px;
+    }
+    &::after {
+      bottom: -15px;
+    }
+  }
+}
+.home__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__title {
+  font-family: Merriweather, sans-serif ;
+  font-size: 66px;
+  font-weight: 400;
+  line-height: 83px;
+  letter-spacing: 0;
+  color: white;
+  &-gold {
+    color: $gold
+  }
+}
+
+.home__text {
+  color: rgb(255, 255, 255);
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin:32px 0 65px;
+}
+
+.home__end {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  align-items: flex-end;
+}
+.home__contact {
+  &-text{
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  &-num{
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 42px;
+    display: inline-block;
+    color: white;
+    margin: 17px 0 36px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 291px;
+    height: 63px;
+    padding: 21px 42px 21px 42px;
+    color: rgb(255, 255, 255);
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: center;
+    border-radius: 60px;
+    background: linear-gradient(90.00deg, rgb(219, 167, 91), rgb(251, 209, 102) 53.394%, rgb(219, 167, 91) 100%);
+    box-shadow: 0 6px 16px 0 rgba(200, 143, 61, 0.7), 0 5px 0 0 rgb(200, 143, 61);
+    transition: .1s;
+    border: white;
+    &:hover{
+      background: #4268A0;
+      width: 291px;
+      height: 63px;
+      box-shadow:0 6px 16px 0 rgba(100,120,180,0.7), 0 5px 0 0 rgb(80,120,170);
+      color: rgb(240,240,240);
+    }
+  }
+}
+.home__people {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  &-name {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+}

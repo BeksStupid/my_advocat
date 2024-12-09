@@ -1,0 +1,45 @@
+.result{
+  background: #294878 url('../assets/results-bg.png') center/cover no-repeat;
+  padding: 96px 0 128px;
+  &__title{
+    color: rgb(216, 171, 104);
+    font-family: Merriweather,sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__subtitle{
+    color: rgb(255, 255, 255);
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 178.19%;
+    text-align: center;
+    margin: 30px 0 51px;
+  }
+  &__nav{
+    display: flex;
+    justify-content: center;
+    column-gap: 23px;
+    margin-bottom: 43px;
+  }
+  &__link{
+
+  }
+  &__content{
+    padding:85px 100px ;
+    background: white;
+    border-radius: 30px;
+    &__scrollbar{
+      opacity: 1!important;
+      .swiper-scrollbar-drag:hover{
+        background:rgb(47, 86, 145)!important;
+      }
+    }
+  }
+}
+.swiper{
+  padding-bottom: 50px;
+}
+
+

@@ -1,0 +1,101 @@
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #00000099;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  .popup {
+    background: white;
+    padding: 52px 70px 67px;
+    border-radius: 20px;
+    display: flex;
+    column-gap: 43px;
+    position: relative;
+    font-family: Roboto, sans-serif;
+
+    &__close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 32px;
+      color: rgb(30, 30, 30);
+      cursor: pointer;
+    }
+
+    &__title {
+      color: rgb(47, 86, 145);
+      font-size: 30px;
+      font-weight: 400;
+      font-family: Merriweather, sans-serif;
+      margin-bottom: 23px;
+    }
+
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      row-gap: 27px;
+    }
+
+    &__label {
+      width: calc(50% - 12px);
+
+      &:last-child {
+        width: 100%;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      height: 56px;
+      border-radius: 4px;
+      border: 2px solid rgb(224, 180, 115);
+    }
+
+    &__end {
+      margin: 24px 0;
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+    }
+
+    &__check {
+      width: 24px;
+      height: 24px;
+      border: 2px solid rgb(224, 180, 115);
+    }
+
+    &__text {
+      color: rgb(111, 115, 125);
+      font-family: Roboto, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    &__btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 291px;
+      height: 63px;
+      padding: 21px 42px 21px 42px;
+      color: rgb(255, 255, 255);
+      font-family: Roboto, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0;
+      text-align: center;
+      border-radius: 60px;
+      background: linear-gradient(90.00deg, rgb(219, 167, 91), rgb(251, 209, 102) 53.394%, rgb(219, 167, 91) 100%);
+      box-shadow: 0 6px 16px 0 rgba(200, 143, 61, 0.7), 0 5px 0 0 rgb(200, 143, 61);
+      transition: .1s;
+      border: white;
+    }
+  }
+}
